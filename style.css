@@ -1,0 +1,115 @@
+body{
+	background-color: #6f0000;
+	background-image: url('https://c1.wallpaperflare.com/preview/511/885/234/chess-game-play-king.jpg');
+	background-size: cover;
+}
+
+nav{
+	color: white;
+	text-align: center;
+	font-family: 'verdana';
+	font-size: 30px;
+}
+
+.container{
+	border: 15px solid #6f0000;
+	padding: 0px;
+	width: 565px;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.container ul{
+	margin: -1.5px;
+	padding: 0px;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.container li{
+	margin :-1.8px;
+	padding: 0px;
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.odd li:nth-child(odd){
+	background-color: black;
+}
+
+.even li:nth-child(even){
+	background-color: black;
+	margin-left: -1.5px;
+}
+
+.odd li:nth-child(even){
+	background-color:#abbaab;
+	margin-left: -1.5px;
+}
+
+.even li:nth-child(odd){
+	background-color:#abbaab;
+}
+
+li:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.odd li:nth-child(odd):hover{
+	animation:4s odd_anim1 forwards;
+}
+
+.even li:nth-child(even):hover{
+	animation:4s even_anim1 forwards;
+}
+
+.odd li:nth-child(even):hover{
+	animation:4s even_anim2 forwards;
+}
+
+.even li:nth-child(odd):hover{
+	animation:4s odd_anim2 forwards;
+}
+
+@keyframes odd_anim1{
+	from{background-color: #6f0000;
+		opacity: 0.7;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes even_anim1{
+	from{background-color: #6f0000;
+		opacity: 0.7;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes even_anim2{
+	from{background-color: #fff200;
+		opacity: 0.7;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes odd_anim2{
+	from{background-color: #fff200;
+		opacity: 0.7;
+	}
+	to{
+		opacity: 1;
+	}
+}

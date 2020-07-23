@@ -1,112 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>CHESS BOARD</title>
 </head>
 <body>
-	<nav>
-		Let's Play the Game...
-	</nav>
-	<div class="container">
-		<div class="odd">
-			<ul id="first">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+	<div class="navbar">
+		<h2>
+			<i class="fa fa-thumbs-up"></i> Let's test your Chess Skill...
+		</h2>
+	</div>
+	<div>
+		<div class="rules">
+			<div class="note">
+				<p>
+					<a style="color: #66ff00; font-size: 40px;">♛</a> King can move exactly one square horizontally, vertically, or diagonally. At most once in every game, each king is allowed to make a special move, known as castling.
+				</p>
+			</div>
+			<div class="note">
+				<p>
+					<a style="color: #66ff00; font-size: 40px;">♚</a> Queen can move any number of vacant squares diagonally, horizontally, or vertically.
+				</p>
+			</div>
+			<div class="note">
+				<p>
+					<a style="color: #66ff00; font-size: 40px;">♜</a> Rook can move any number of vacant squares vertically or horizontally. It also is moved while castling.
+				</p>
+			</div>
+			<div class="note"> 
+				<p>
+					<a style="color: #66ff00; font-size: 40px;">♝</a> Bishop can move any number of vacant squares in any diagonal direction.
+				</p>
+			</div>
+			<div class="note">
+				<p>
+					<a style="color: #66ff00; font-size: 40px;">♞</a> Knight can move one square along any rank or file and then at an angle. The knight´s movement can also be viewed as an “L” or “7″ laid out at any horizontal or vertical angle.
+				</p>
+			</div>
+			<div class="note" id="pawns_rule">
+				<p>
+					<a style="color: #66ff00; font-size: 40px;">♟</a> Pawns can move forward one square, if that square is unoccupied. If it has not yet moved, the pawn has the option of moving two squares forward provided both squares in front of the pawn are unoccupied. A pawn cannot move backward. Pawns are the only pieces that capture differently from how they move. They can capture an enemy piece on either of the two spaces adjacent to the space in front of them (i.e., the two squares diagonally in front of them) but cannot move to these spaces if they are vacant. The pawn is also involved in the two special moves en passant and promotion.
+				</p>
+			</div>
 		</div>
+		
+		<div class="container">
+			<div class="odd">
+				<ul id="first">
+					<li>♜</li>
+					<li>♞</li>
+					<li>♝</li>
+					<li>♛</li>
+					<li>♚</li>
+					<li>♝</li>
+					<li>♞</li>
+					<li>♜</li>
+				</ul>
+			</div>
 
-		<div class="even">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
+			<div class="even">
+				<ul>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+				</ul>
+			</div>
 
-		<div class="odd">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
+			<div class="odd">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 
-		<div>
-			<ul class="even">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div class="odd">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div class="even">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div class="odd">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div class="even">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<div>
+				<ul class="even">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="odd">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="even">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="odd">
+				<ul>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+					<li id="Pawns">♟</li>
+				</ul>
+			</div>
+			<div class="even">
+				<ul>
+					<li>♜</li>
+					<li>♞</li>
+					<li>♝</li>
+					<li>♛</li>
+					<li>♚</li>
+					<li>♝</li>
+					<li>♞</li>
+					<li>♜</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 

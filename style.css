@@ -1,22 +1,58 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
 body{
 	background-color: #6f0000;
 	background-image: url('https://c1.wallpaperflare.com/preview/511/885/234/chess-game-play-king.jpg');
 	background-size: cover;
 }
 
-nav{
-	color: white;
+.navbar{
+	padding: 12px;
 	text-align: center;
-	font-family: 'verdana';
-	font-size: 30px;
+	color: #66ff00;
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 20px;
 }
 
+.navbar h2{
+	letter-spacing: 1px;
+}
+
+.rules{
+	display: inline-block;
+	width: 45%;
+}
+
+.rules div{
+	margin: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	background-color: black;	
+}
+
+.note{
+	width: 90%;
+}
+
+.rules p{
+	color: white;
+	text-align: justify;
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+}
 .container{
+	float: right;
 	border: 15px solid #6f0000;
-	padding: 0px;
-	width: 565px;
-	margin: auto;
-	margin-top: 60px;
+	padding: 5px;
+	width: 641px;
+	margin-top: 20px;
+	margin-right: 30px;
 }
 
 .container ul{
@@ -30,14 +66,14 @@ nav{
 
 .container li{
 	margin :-1.8px;
-	padding: 0px;
 	display: inline-block;
-	height: 70px;
-	width: 70px;
+	height: 80px;
+	width: 80px;
 	justify-content: center;
 	text-align: center;
+	font-size: 50px;
+	color: #fd1d1d;
 }
-
 
 .odd li:nth-child(odd){
 	background-color: black;
@@ -58,58 +94,65 @@ nav{
 }
 
 li:hover{
-	transform: scale(1.05);
 	cursor: pointer;
 }
 
 .odd li:nth-child(odd):hover{
-	animation:4s odd_anim1 forwards;
+	animation:1s odd_anim1 forwards;
 }
 
 .even li:nth-child(even):hover{
-	animation:4s even_anim1 forwards;
+	animation:1s even_anim1 forwards;
 }
 
 .odd li:nth-child(even):hover{
-	animation:4s even_anim2 forwards;
+	animation:1s even_anim2 forwards;
 }
 
 .even li:nth-child(odd):hover{
-	animation:4s odd_anim2 forwards;
+	animation:1s odd_anim2 forwards;
 }
 
 @keyframes odd_anim1{
 	from{background-color: #6f0000;
 		opacity: 0.7;
+		
 	}
 	to{
 		opacity: 1;
+		
 	}
 }
 
 @keyframes even_anim1{
 	from{background-color: #6f0000;
 		opacity: 0.7;
+		
 	}
 	to{
 		opacity: 1;
+		
 	}
 }
 
 @keyframes even_anim2{
 	from{background-color: #fff200;
 		opacity: 0.7;
+		
 	}
 	to{
 		opacity: 1;
+		
 	}
 }
 
 @keyframes odd_anim2{
 	from{background-color: #fff200;
 		opacity: 0.7;
+		
 	}
 	to{
 		opacity: 1;
+		
 	}
 }
